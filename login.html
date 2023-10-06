@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión | Punto Penal</title>
+    <link rel="shortcut icon" href="images/logo-puntopenal.ico">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/13b7066a14.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container">
+        <article class="form-box">
+            <div class="volver">
+                <a href="index.html" class="volver">Volver</a>
+            </div>
+            <h1 id="title">Registrarse</h1>
+            <form id="form">
+                <div class="input-group">
+                    <div class="input-field" id="telField">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <input type="text" name="tel" id="tel" placeholder="Telefono">
+                    </div>
+                    <p id="telError" class="error"></p>
+                    <div class="input-field" id="emailField">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" name="email" id="email" placeholder="Correo">
+                    </div>
+                    <p id="emailError" class="error"></p>
+                    <div class="input-field">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" name="user" id="user" placeholder="Usuario">
+                    </div>
+                    <p id="userError" class="error"></p>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" id="password" placeholder="Contraseña">
+                    </div>
+                    <p id="passwordError" class="error"></p>
+                    <input type="submit" value="Enviar" class="submit-btn" id="submitBtn">
+                    <p class="dn" id="pass">Olvidaste la contraseña? <a href="#">Click aquí!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="registrarBtn">Registrarse</button>
+                    <button type="button" id="ingresarBtn" class="disable">Ingresar</button>
+                </div>
+            </form>
+        </article>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
