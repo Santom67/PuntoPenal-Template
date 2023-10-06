@@ -34,7 +34,6 @@ body {
     align-items: center;
     background-color: var(--color-two);
 }
-
 /* Agregue las redes y el boton reservar que no estaban en este formato de pantalla */
 .redes-btn i {
     color: var(--color-four);
@@ -118,142 +117,100 @@ body {
     display: none;
 }
 
-/* //css para las canchas en alquiler hasta 550px */
-.pAlquiler {
-
-    text-align: center;
-    font-size: 25px;
-    color: #F2F2F2;
-    padding: 0px;
-    background-color: var(--color-three);
-
-}
-
-.grid-container {
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    gap: 10px;
-    background-color: var(--color-two);
-    padding: 25px;
-}
-
-.card {
-    height: 200px;
-    color: #F2F2F2;
-    border: 5px solid var(--color-four);
-    background-color: var(--color-three);
-    padding: 10px;
-    font-size: 14px;
-    margin-left: 30px;
-    margin-right: 30px;
-    text-align: center;
-}
-
-.res-btn a {
-    text-decoration: none;
-    color: var(--color-four);
-    background-color: var(--color-two);
-    padding: 1rem;
-    border-radius: 2rem;
-    font-weight: 800;
-}
-
-
-
-    /* Desktop nav menu */
-    /*Cambie a 550 px para que no se achique tanto la letra y no se solape Alq Canchas y Otros Servicios*/
-    
-    @media(min-width: 650px) {
-        #buttons {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: var(--color-two);
-        }
-
-        .redes-btn i {
-            color: var(--color-four);
-        }
-
-        .redes-btn i:hover {
-            transform: scale(1.05, 1.05);
-            transition: transform 0.2s ease-in;
-        }
-
-        .reserva-btn a {
-            text-decoration: none;
-            color: var(--color-four);
-            background-color: var(--color-three);
-            padding: 1rem;
-            border-radius: 2rem;
-            font-weight: 800;
-        }
-
-        .reserva-btn a:hover {
-            background-color: #49a53b;
-            transition: all 0.2s ease-in;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar-container {
-            display: none;
-        }
-
-        #menu-toggler {
-            display: none;
-        }
-
-        #nav-menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            font-size: 2vw;
-        }
-
-        #nav-menu a:nth-child(3) {
-            display: inline;
-        }
-
-        #nav-menu a:hover {
-            transition: transform 0.2s ease-in;
-            transform: scale(1.05, 1.05);
-            border-bottom: 1px solid var(--color-three);
-        }
-
-        /* //css para las canchas en alquiler min 550px */
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 50% 50%;
-            gap: 20px;
-            background-color: (--color-two);
-            padding: 50px;
-
-        }
-
-        .card {
-            height: 300px;
-            border: 5px solid (--color-four);
-            background-color: (--color-three);
-            padding: 10px;
-            font-size: 14px;
-            color: (--color-four); 
-            text-align: center;
-        }
-
-        .pAlquiler {
-
-            text-align: center;
-            font-size: 30px;
-            padding: 1px;
-            background-color: var(--color-three);
-        }
-
+/* Desktop nav menu */
+/*Cambie a 550 px para que no se achique tanto la letra y no se solape Alq Canchas y Otros Servicios*/
+@media(min-width: 550px) {
+    #buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--color-two);
     }
+
+    .redes-btn i {
+        color: var(--color-four);
+    }
+
+    .redes-btn i:hover {
+        transform: scale(1.05, 1.05);
+        transition: transform 0.2s ease-in;
+    }
+
+    .reserva-btn a {
+        text-decoration: none;
+        color: var(--color-four);
+        background-color: var(--color-three);
+        padding: 1rem;
+        border-radius: 2rem;
+        font-weight: 800;
+    }
+
+    .reserva-btn a:hover {
+        background-color: #49a53b;
+        transition: all 0.2s ease-in;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar-container {
+        display: none;
+    }
+
+    #menu-toggler {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
+    }
+
+    #nav-menu a:nth-child(3) {
+        display: inline;
+    }
+
+    #nav-menu a:hover {
+        transition: transform 0.2s ease-in;
+        transform: scale(1.05, 1.05);
+        border-bottom: 1px solid var(--color-three);
+    }
+}
+#bienvenidos {
+    background-image: url('images/main.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    text-align: center;
+  }
+  #bienvenidos > h1, h2 {
+    width: 100%;
+    padding: 2%;
+    margin: 2%;
+    margin-bottom: 5%;
+  }
+  .article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    border-style: hidden; color: white;
+  }
+  
+  .article img {
+    width: 100%;
+    grid-row: span 2;
+  }
+  .article div {
+padding: 2%;
+background-color: #614ed9
+  }
