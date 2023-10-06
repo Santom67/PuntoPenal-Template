@@ -244,7 +244,7 @@ body {
             background-color: (--color-three);
             padding: 10px;
             font-size: 14px;
-            color: #F2F2F2;
+            color: (--color-four); 
             text-align: center;
         }
 
